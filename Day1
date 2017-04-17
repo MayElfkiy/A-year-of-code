@@ -17,7 +17,7 @@
               ans = "Weird";
             }
             else{
-                if (n>6 & n<20)
+                if (n>6 & n<=20)
                     { ans= "Weird";}
                 else { ans= "Not Weird";}
                 
