@@ -28,7 +28,7 @@ public class BinaryNum {
            
       }
         
-        if(numArray[i]== '0') {sum1=0 ;}
+       else {sum1=0 ;}
          
       }
       System.out.println(max);
