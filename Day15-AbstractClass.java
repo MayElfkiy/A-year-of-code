@@ -1,5 +1,18 @@
 
+public class Solution {
+   
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String title = scanner.nextLine();
+        String author = scanner.nextLine();
+        int price = scanner.nextInt();
+        scanner.close();
 
+        Book book = new MyBook(title, author, price);
+        book.display();
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 abstract class Book {
     String title;
     String author;
@@ -31,16 +44,4 @@ class MyBook extends Book{
 }
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-public class Solution {
-   
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String title = scanner.nextLine();
-        String author = scanner.nextLine();
-        int price = scanner.nextInt();
-        scanner.close();
 
-        Book book = new MyBook(title, author, price);
-        book.display();
-    }
-}
